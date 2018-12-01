@@ -1,0 +1,76 @@
+.rootWidget{
+  position: relative;
+}
+
+body{
+  background: linear-gradient(45deg, red, blue);
+  /* background-color: red; */
+    animation-name: example;
+    animation-duration: 4s;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-family: monaco;
+}
+  
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.clock{
+  background-color: black;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  left: 35%;
+  top: 50px;
+}
+
+.tab {
+  background-color: black;
+  position: absolute;
+  left: 35%;
+  top: 400px;
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.tab-header {
+  /* display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  border-radius: 5px; */
+  width: 200px;
+  height: 30px;
+  margin: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.tablinks{
+  width: 120px;
+  border-top: 2px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+}
+
+.tab-content {
+  position: absolute;
+  margin: 20px;
+}
